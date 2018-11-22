@@ -1,0 +1,19 @@
+#server start
+server:
+  context-path: /api
+  port: 8081
+  error:
+    path: /api/error
+  servlet:
+    session:
+      timeout: 30m  
+#server end
+
+spring:
+  datasource:
+    #url: jdbc:mysql://127.0.0.1:3306/petshop
+    url: jdbc:mysql://172.17.0.1:33061/dmdb
+    username: root
+    password: abc123yy
+    driverClassName: com.mysql.jdbc.Driver
+    sqlScriptEncoding: UTF-8
